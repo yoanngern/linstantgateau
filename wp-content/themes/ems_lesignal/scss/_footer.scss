@@ -1,12 +1,12 @@
 footer {
-    background-color: $brown;
-    color: $white;
-    padding: 32px 48px;
+    background-color: $black;
+
+    color: $pink;
+    padding: 32px 76px;
     height: auto;
 
-
     a {
-        color: $beige;
+        color: lighten($black, 60);
         text-decoration: none;
     }
 
@@ -17,7 +17,7 @@ footer {
     }
 
     nav {
-        border-bottom: 1px solid $beige;
+        border-bottom: 1px solid $pink;
         margin-bottom: 16px;
         display: none;
 
@@ -32,7 +32,7 @@ footer {
                     display: block;
                     font-family: $font-bold;
                     font-size: 1.15em;
-                    
+
                     &:hover {
                         color: $white;
                     }
@@ -43,21 +43,16 @@ footer {
 
     div.address,
     div.contact {
-        width: 180px;
+        width: 300px;
         margin: 16px 8px;
         display: inline-block;
         vertical-align: top;
 
-        h3 {
-            font-family: $font-bold;
-            font-size: 0.9em;
-            color: $beige;
-            padding-bottom: 8px;
-        }
-
         p {
-            color: $beige;
-            font-size: 0.9em;
+            color: lighten($black, 60);
+            font-size: 1em;
+            font-family: $font-sans;
+            letter-spacing: 0.05em;
         }
     }
 

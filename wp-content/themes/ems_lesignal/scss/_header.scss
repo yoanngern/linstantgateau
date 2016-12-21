@@ -1,13 +1,13 @@
 header {
-    position: fixed;
+    position: relative;
     width: 100%;
     display: block;
     top: 0;
     left: 0;
-    height: 132px;
+    height: 80px;
     background-color: $white;
     z-index: 1000;
-    box-shadow: 0px 2px 23px 0px rgba(0,0,0,0.50);
+    //box-shadow: 0px 2px 23px 0px rgba(0,0,0,0.50);
 
     div.content {
         display: block;
@@ -22,18 +22,18 @@ header {
         position: absolute;
         top: 0;
         left: 0;
-        width: 282px;
-        height: 100px;
+        width: 425px;
+        height: 70px;
         display: block;
         z-index: 1000;
-        margin: 11px 0 0 32px;
+        margin: 8px 0 0 32px;
         background-position: top left;
         background-repeat: no-repeat;
         background-size: contain;
     }
 
     #logo {
-        background-image: url('images/logo_header.svg');
+        background-image: url('images/logo_header.png');
     }
 
     #logo2 {
@@ -54,7 +54,7 @@ header {
         top: 0;
         right: 0;
         z-index: 1000;
-        margin: 30px 16px 0 0;
+        margin: 15px 16px 0 0;
 
         ul {
             padding: 0;
@@ -66,21 +66,19 @@ header {
                 margin: 0;
 
                 &.current-menu-item a {
-                    //border-bottom: 3px solid $brown;
-                    color: $brown-light;
+                    color: $pink;
                 }
 
                 &:hover a {
-                    border-bottom: 3px solid $brown;
+                    color: lighten($black, 40);
                 }
 
                 a {
-                    color: $brown;
+                    color: lighten($black, 20);
                     text-decoration: none;
-                    font-size: 1.25em;
-                    text-transform: uppercase;
+                    font-size: 1em;
                     padding: 16px 8px 4px 8px;
-                    font-family: $font-bold;
+                    font-family: $font-sans;
                     display: block;
                     cursor: pointer;
                 }

@@ -16,24 +16,13 @@
 		<?php endif; ?>
 
 		<div class="address">
-			<h3>Nous trouver</h3>
-			<p>EMS Le Signal<br/>
-				Rte du Signal 6<br/>
-				1080 Les Cullayes<br/>
-				Suisse</p>
+			<p>L'INSTANT GATEAU<br/>
+				<a target="_blank" href="https://goo.gl/maps/6DqPRSrs5fS2">Rue du Centre 14, 1009 Pully CH</a></p>
 		</div>
 
 		<div class="contact">
-			<h3>Nous contacter</h3>
-			<p>Tél:  021 903 11 66</p>
-			<p>Fax: 021 903 38 18</p>
-			<p><a href="/contact">secretariat@ems-lesignal.ch</a></p>
-		</div>
-
-		<div class="partners">
-			<a target="_blank" href="http://www.avdems.ch" id="avdems">Avdems</a>
-			<a target="_blank" href="https://www.reseau-sante-region-lausanne.ch" id="rsrl">Réseau Santé Région Lausanne</a>
-			<a target="_blank" href="http://palliative.ch" id="palliative">palliative.ch</a>
+			<p>+41 21 711 23 90</p>
+			<p><a href="mailto:info@linstantgateau.ch">info@linstantgateau.ch</a></p>
 		</div>
 
 	</div>

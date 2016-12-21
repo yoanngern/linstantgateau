@@ -41,17 +41,33 @@
 
 <?php endif; ?>
 
+
+
 <?php if ( get_field( 'slogan' ) ):
 
 	$slogan = get_field( 'slogan' ); ?>
 
 	<section class="slogan">
-		<div class="center">
-			<div class="line left"></div>
-			<h1><?php echo $slogan; ?></h1>
-			<div class="line right"></div>
+		<div class="block">
+			<div class="center">
+				<div class="line left"></div>
+				<h1><?php echo $slogan; ?></h1>
+				<div class="line right"></div>
+			</div>
+			<div class="gradient"></div>
 		</div>
-		<div class="gradient"></div>
+	</section>
+<?php endif; ?>
+
+
+<?php if ( get_field( 'text' ) ):
+
+	$text = get_field( 'text' ); ?>
+
+	<section class="text">
+		<div class="block">
+			<?php echo $text; ?>
+		</div>
 	</section>
 <?php endif; ?>
 
@@ -60,48 +76,49 @@
 
 	<?php while ( have_rows( 'slides' ) ): the_row(); ?>
 		<section class="slide_full">
+			<a href="<?php the_sub_field( 'link' ); ?>">
 
-			<div class="gradient_top"></div>
-			<?php
+				<div class="gradient_top"></div>
+				<?php
 
-			$images = get_sub_field( 'images' );
+				$images = get_sub_field( 'images' );
 
-			if ( $images ):
+				if ( $images ):
 
-				if ( count( $images ) == 1 ):
+					if ( count( $images ) == 1 ):
 
-					$image = $images[0];
+						$image = $images[0];
 
-					?>
+						?>
 
-					<div class="oneimage"
-					     style="background-image: url('<?php echo $image['sizes']['full-slide']; ?>')"
-					     data-width="1320"
-					     data-height="388" data-height-mobile="500"></div>
+						<div class="oneimage"
+						     style="background-image: url('<?php echo $image['sizes']['full-slide']; ?>')"
+						     data-width="1320"
+						     data-height="388" data-height-mobile="500"></div>
 
-				<?php else: ?>
+					<?php else: ?>
 
-					<div id="slides" class="slidesjs" data-size="<?php echo count( $images ); ?>" data-height="388"
-					     data-nav="false" data-pag="true">
-						<?php foreach ( $images as $image ): ?>
-							<div
-								style="background-image: url('<?php echo $image['sizes']['full-slide']; ?>')"></div>
-						<?php endforeach; ?>
-					</div>
+						<div id="slides" class="slidesjs" data-size="<?php echo count( $images ); ?>" data-height="388"
+						     data-nav="false" data-pag="true">
+							<?php foreach ( $images as $image ): ?>
+								<div
+									style="background-image: url('<?php echo $image['sizes']['full-slide']; ?>')"></div>
+							<?php endforeach; ?>
+						</div>
+
+					<?php endif; ?>
+
 
 				<?php endif; ?>
 
+				<div class="gradient_bottom"></div>
 
-			<?php endif; ?>
-
-			<div class="gradient_bottom"></div>
-
-			<article>
-				<div class="text">
-					<?php the_sub_field( 'title' ); ?>
-					<a href="<?php the_sub_field( 'link' ); ?>">En savoir plus</a>
-				</div>
-			</article>
+				<article>
+					<div class="text">
+						<?php the_sub_field( 'title' ); ?>
+					</div>
+				</article>
+			</a>
 
 		</section>
 
@@ -126,9 +143,9 @@
 					?>
 
 					<div class="oneimage"
-					     style="background-image: url('<?php echo $image['sizes']['16_9-slide']; ?>')"
-					     data-width="1320"
-					     data-height="742.5"></div>
+					     style="background-image: url('<?php echo $image['sizes']['1_1-slide']; ?>')"
+					     data-width="500"
+					     data-height="500"></div>
 
 				<?php else: ?>
 
@@ -150,6 +167,7 @@
 			<article>
 				<div class="text">
 					<h2><?php the_sub_field( 'title' ); ?></h2>
+					<div class="line"></div>
 					<p><?php the_sub_field( 'text' ); ?></p>
 				</div>
 			</article>
@@ -201,29 +219,6 @@ if ( ! empty( $location ) ):
 <?php endif; ?>
 <?php //endif; ?>
 
-
-<?php if ( $post->post_name == "contact" ): ?>
-
-	<section class="slogan">
-		<div class="center">
-			<div class="line left"></div>
-			<h1>Nous écrire</h1>
-			<div class="line right"></div>
-		</div>
-	</section>
-
-	<?php echo do_shortcode( '[contact-form-7 id="200" title="Contact"]' );
-
-endif; ?>
-
-
-
-
-<?php if ( $post->post_name == "accueil" ): ?>
-
-	<div class="button"><a href="/contact/">Nous contacter</a></div>
-
-<?php endif; ?>
 
 </div>
 
