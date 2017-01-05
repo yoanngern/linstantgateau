@@ -16,7 +16,7 @@
 		<?php endif; ?>
 
 		<div class="address">
-			<p>L'INSTANT GATEAU<br/>
+			<p><strong>L'INSTANT GATEAU</strong><br/>
 				<a target="_blank" href="https://goo.gl/maps/6DqPRSrs5fS2">Rue du Centre 14, 1009 Pully CH</a></p>
 		</div>
 

@@ -72,8 +72,11 @@
 
 	$height = 600;
 
+	$home = "";
+
 
 	if ( in_array( "home", $body_class ) ) {
+		$home = "home";
 		$height = 600;
 	}
 
@@ -89,7 +92,7 @@
 
 			?>
 
-			<div class="oneimage mobile"
+			<div class="oneimage mobile <?php echo $home; ?>"
 			     style="background-image: url('<?php echo $thumb_mob; ?>')" data-width="600"
 			     data-height="<?php echo $height; ?>" data-height-mobile="600"></div>
 
@@ -99,7 +102,7 @@
 
 		?>
 
-		<div class="oneimage"
+		<div class="oneimage <?php echo $home; ?>"
 		     style="background-image: url('<?php echo $thumb; ?>')" data-width="1320"
 		     data-height="<?php echo $height; ?>" data-height-mobile="1320"></div>
 

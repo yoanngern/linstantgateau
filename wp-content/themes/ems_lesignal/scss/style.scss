@@ -356,6 +356,17 @@ section.text {
         p {
             padding-bottom: 15px;
         }
+
+        p:first-child {
+            &::first-letter {
+                font-size:2.8em;
+                padding-top: 0.2em;
+                padding-right:0.2em;
+                float:left;
+                color: lighten($black, 45);
+
+            }
+        }
     }
 }
 
@@ -722,7 +733,7 @@ ul.icons {
 @media only screen and (max-width: 500px) {
 
     section.slideheader {
-        div.oneimage {
+        div.oneimage.home {
             display: none;
 
             &.mobile {

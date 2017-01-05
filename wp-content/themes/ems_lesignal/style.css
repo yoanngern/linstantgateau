@@ -204,6 +204,10 @@ footer {
     margin: 0 auto;
     width: 100%;
     max-width: 1310px; }
+    footer div.content strong {
+      font-weight: 600; }
+    footer div.content a:hover {
+      color: #FFFFFF; }
   footer nav {
     border-bottom: 1px solid #ffb27d;
     margin-bottom: 16px;
@@ -615,6 +619,12 @@ section.text {
     text-align: justify; }
     section.text div.block p {
       padding-bottom: 15px; }
+    section.text div.block p:first-child::first-letter {
+      font-size: 2.8em;
+      padding-top: 0.2em;
+      padding-right: 0.2em;
+      float: left;
+      color: #8d8d8d; }
 
 section.map {
   margin: 0 auto;
@@ -859,9 +869,9 @@ ul.icons {
       float: none; } }
 
 @media only screen and (max-width: 500px) {
-  section.slideheader div.oneimage {
+  section.slideheader div.oneimage.home {
     display: none; }
-    section.slideheader div.oneimage.mobile {
+    section.slideheader div.oneimage.home.mobile {
       display: block; }
   section.slide_text article,
   section.map article {
