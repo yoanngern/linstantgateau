@@ -78,6 +78,11 @@ div.oneimage {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    &.mobile {
+        display: none;
+
+    }
 }
 
 section.slide_full {
@@ -702,7 +707,13 @@ ul.icons {
 
 @media only screen and (max-width: 500px) {
 
+    div.oneimage {
+        display: none;
 
+        &.mobile {
+            display: block;
+        }
+    }
 
     section.slide_text,
     section.map {

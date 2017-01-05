@@ -2124,7 +2124,7 @@
 			}
 		},
 	"esLintSourceType": 0,
-	"externalServerAddress": "http:\/\/linstantgateau.ch",
+	"externalServerAddress": "http:\/\/dev.linstantgateau.ch",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",

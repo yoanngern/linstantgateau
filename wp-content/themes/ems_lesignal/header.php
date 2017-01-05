@@ -85,6 +85,16 @@
 
 		if ( in_array( "home", $body_class ) ) {
 			$thumb = $image['sizes']['header-home'];
+			$thumb_mob = $image['sizes']['header-home_mob'];
+
+			?>
+
+			<div class="oneimage mobile"
+			     style="background-image: url('<?php echo $thumb_mob; ?>')" data-width="600"
+			     data-height="<?php echo $height; ?>" data-height-mobile="600"></div>
+
+			<?php
+
 		}
 
 		?>

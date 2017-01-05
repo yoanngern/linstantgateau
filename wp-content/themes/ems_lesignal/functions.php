@@ -37,3 +37,4 @@ add_image_size( 'full-slide', 2100, 617, true);
 add_image_size( 'header-slide', 2560, 1164, true);
 //add_image_size( 'header-home', 2100, 889, true);
 add_image_size( 'header-home', 2560, 1164, true);
+add_image_size( 'header-home_mob', 828, 828, true);

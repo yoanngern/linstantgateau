@@ -386,6 +386,8 @@ div.oneimage {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
+  div.oneimage.mobile {
+    display: none; }
 
 section.slide_full {
   position: relative;
@@ -834,6 +836,10 @@ ul.icons {
     width: auto; } }
 
 @media only screen and (max-width: 500px) {
+  div.oneimage {
+    display: none; }
+    div.oneimage.mobile {
+      display: block; }
   section.slide_text article,
   section.map article {
     margin: 0;
