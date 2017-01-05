@@ -170,7 +170,8 @@ header {
     top: 0;
     right: 0;
     z-index: 1000;
-    margin: 15px 16px 0 0; }
+    margin: 15px 16px 0 0;
+    background-color: #FFFFFF; }
     header nav ul {
       padding: 0;
       margin: 0; }
@@ -254,6 +255,21 @@ footer {
       footer div.partners a#palliative {
         background-image: url("images/logo_palliative.png");
         width: 102px; }
+  footer div.social {
+    float: right;
+    margin: 22px 8px; }
+    footer div.social a {
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat; }
+      footer div.social a.fb {
+        background-image: url("images/link_facebook.png");
+        margin-right: 20px; }
+      footer div.social a.insta {
+        background-image: url("images/link_instagram.png"); }
 
 .slidesjs {
   position: relative; }
@@ -503,6 +519,11 @@ section.slide_text {
         margin: 0;
         color: #8d8d8d;
         font-size: 3.5em; }
+      section.slide_text article .text h3 {
+        margin-top: -25px; }
+        section.slide_text article .text h3 p {
+          color: #ffb27d;
+          font-size: 1.7em; }
       section.slide_text article .text div.line {
         width: 25%;
         height: 3px;
@@ -833,12 +854,14 @@ ul.icons {
       transform: translateY(0); }
   footer {
     padding: 10px;
-    width: auto; } }
+    width: auto; }
+    footer div.social {
+      float: none; } }
 
 @media only screen and (max-width: 500px) {
-  div.oneimage {
+  section.slideheader div.oneimage {
     display: none; }
-    div.oneimage.mobile {
+    section.slideheader div.oneimage.mobile {
       display: block; }
   section.slide_text article,
   section.map article {

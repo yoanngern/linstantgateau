@@ -24,6 +24,11 @@
 			<p>+41 21 711 23 90</p>
 			<p><a href="mailto:info@linstantgateau.com">info@linstantgateau.com</a></p>
 		</div>
+		
+		<div class="social">
+			<a target="_blank" href="https://www.facebook.com/Linstant-Gâteau-Fanny-Beausire-1768149016769186/?fref=ts" class="fb"></a>
+			<a target="_blank" href="https://www.instagram.com/linstantgateau/" class="insta"></a>
+		</div>
 
 	</div>
 

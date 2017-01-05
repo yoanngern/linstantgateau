@@ -225,6 +225,16 @@ section.slide_text {
                 font-size: 3.5em;
             }
 
+            h3 {
+                margin-top: -25px;
+
+                p {
+                    color: $pink;
+                    font-size: 1.7em;
+
+                }
+            }
+
             div.line {
                 width: 25%;
                 height: 3px;
@@ -701,17 +711,23 @@ ul.icons {
     footer {
         padding: 10px;
         width: auto;
+
+        div.social {
+            float: none;
+        }
     }
 
 }
 
 @media only screen and (max-width: 500px) {
 
-    div.oneimage {
-        display: none;
+    section.slideheader {
+        div.oneimage {
+            display: none;
 
-        &.mobile {
-            display: block;
+            &.mobile {
+                display: block;
+            }
         }
     }
 

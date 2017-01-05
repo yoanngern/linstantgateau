@@ -367,6 +367,22 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/images\/link_facebook.png": {
+		"ft": 32768,
+		"iS": 741,
+		"oA": 0,
+		"oAP": "\/images\/link_facebook.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/images\/link_instagram.png": {
+		"ft": 32768,
+		"iS": 1406,
+		"oA": 0,
+		"oAP": "\/images\/link_instagram.png",
+		"oF": 0,
+		"opt": 1
+		},
 	"\/images\/logo_avdems.png": {
 		"ft": 32768,
 		"iS": 18271,

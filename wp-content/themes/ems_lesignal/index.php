@@ -168,6 +168,9 @@
 				<div class="text">
 					<h2><?php the_sub_field( 'title' ); ?></h2>
 					<div class="line"></div>
+
+					<h3><?php the_sub_field( 'subtitle' ); ?></h3>
+
 					<p><?php the_sub_field( 'text' ); ?></p>
 				</div>
 			</article>

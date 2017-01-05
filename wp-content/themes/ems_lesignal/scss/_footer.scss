@@ -90,4 +90,27 @@ footer {
         }
 
     }
+
+    div.social {
+        float: right;
+        margin: 22px 8px;
+        a {
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+
+            &.fb {
+                background-image: url('images/link_facebook.png');
+                margin-right: 20px;
+            }
+
+            &.insta {
+                background-image: url('images/link_instagram.png');
+            }
+        }
+    }
 }
