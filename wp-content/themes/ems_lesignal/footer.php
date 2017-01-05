@@ -22,7 +22,7 @@
 
 		<div class="contact">
 			<p>+41 21 711 23 90</p>
-			<p><a href="mailto:info@linstantgateau.ch">info@linstantgateau.ch</a></p>
+			<p><a href="mailto:info@linstantgateau.com">info@linstantgateau.com</a></p>
 		</div>
 
 	</div>
