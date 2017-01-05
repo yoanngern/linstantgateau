@@ -70,7 +70,7 @@
 
 	$body_class = get_body_class();
 
-	$height = 452;
+	$height = 600;
 
 
 	if ( in_array( "home", $body_class ) ) {
