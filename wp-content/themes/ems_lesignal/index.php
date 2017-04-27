@@ -166,8 +166,10 @@
 
 			<article>
 				<div class="text">
-					<h2><?php the_sub_field( 'title' ); ?></h2>
-					<div class="line"></div>
+					<?php if ( get_sub_field( 'title' ) != null ): ?>
+						<h2><?php the_sub_field( 'title' ); ?></h2>
+						<div class="line"></div>
+					<?php endif; ?>
 
 					<?php if ( get_sub_field( 'subtitle' ) != null ): ?>
 						<h3><?php the_sub_field( 'subtitle' ); ?></h3>
